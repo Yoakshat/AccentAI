@@ -1,0 +1,98 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+ /* Styling for the company name */
+ h1 {
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the subtitle */
+p.subtitle {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* Centering container */
+.language-container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+/* Scrollable container */
+.language-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+    max-width: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.language-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.language-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+/* Styling the language buttons */
+.language-button {
+    background: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    color: #007bff;
+    border: none;
+    padding: 10px 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.language-button:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.language-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}

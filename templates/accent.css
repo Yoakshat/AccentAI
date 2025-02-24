@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a clean, minimalist font and a subtle gradient background */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #f7f8fc, #ebedfa);
+    font-family: 'Inter', sans-serif;
+    color: #2d2d2d;
+}
+
+/* Message for selected language */
+.language-message {
+    font-size: 20px;
+    font-weight: 400;
+    color: #3c3c3c;
+    margin-bottom: 10px;
+}
+
+.selected-language {
+    font-size: 22px;
+    font-weight: 600;
+    color: #4a90e2;
+    margin-top: 5px;
+}
+
+/* Sentence display with minimal borders and ample spacing */
+.sentence-display {
+    font-size: 28px;
+    font-weight: 500;
+    color: #1a1a1a;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Modern button styles with subtle hover effects */
+.specialButton {
+    padding: 12px 40px;
+    margin: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.specialButton:hover {
+    background-color: #3c7bcc;
+    transform: translateY(-2px);
+}
+
+.specialButton:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+#next {
+    background-color: #7b61ff;
+}
+
+#next:hover {
+    background-color: #6a52e0;
+}
+
+/* Link styling - clean and minimal */
+.back-link {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: 500;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #3c7bcc;
+}
+
+/* Feedback input box with simple borders */
+.input-box {
+    display: none;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f7f8fc;
+    border: 1px solid #d1d5da;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    font-family: 'Inter', sans-serif; /* Updated to match the modern font */
+    color: #2d2d2d; /* Consistent text color */
+}
+
+.input-box h3 {
+font-size: 18px;
+font-weight: 500;
+color: #333;
+margin-bottom: 15px;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5da;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    resize: none;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.2);
+}
+
+/* Adjust body for responsive screens */
+@media (max-width: 768px) {
+    .sentence-display {
+        font-size: 24px;
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .specialButton {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .language-message {
+        font-size: 18px;
+    }
+}

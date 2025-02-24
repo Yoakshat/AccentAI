@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selected</title>
+    <link rel="stylesheet" href="accent.css">
+</head>
+<body>
+    <p class="language-message">
+        You have selected the language:
+        <span class="selected-language">{{ language }}</span>
+    </p>
+
+    <div class="sentence-display">
+        {{ sent }}
+    </div>
+
+    <!-- Audio player for the corresponding language -->
+
+    <button id="playButton" class="specialButton">Play Audio</button>
+    <button id="next" class="specialButton">Next Sentence</button>
+
+    <!-- Input box for user feedback -->
+    <div class="input-box" id="inputBox">
+        <h3>Describe any difficulties you're having with the sentence:</h3>
+        <textarea id= "difficulties" rows="4" cols="50" placeholder="Your feedback..."></textarea>
+    </div>
+
+    <a class="back-link" href="/">Go Back to Language Selection</a>
+
+    <script src="action.js"></script>
+</body>
+</html>
